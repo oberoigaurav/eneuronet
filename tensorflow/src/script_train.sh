@@ -1,0 +1,2 @@
+echo "training eneuronet"
+CUDA_VISIBLE_DEVICES=0 python train.py --logdir=../logdir --ckdir=../models --outdir=../output --datadir=../data/image --labeldir=../data/label--epochs=501 --batch-size=1 --cardinality=8 --reg=0.01 --learning-rate=0.0001 --classes=30 --data-augmentation --control-points=2 --std-dev=15

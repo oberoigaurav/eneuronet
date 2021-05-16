@@ -62,3 +62,36 @@ We parameterize the segmentation label probability maps using the E-NeuroNet arc
 Here, we leverage the use of unannotated dataset while training E-NeuroNet with smaller high quality labelled dataset. Unannotated dataset was utilized for the novel registration-based data augmentation, where we randomly register a labelled image to an image in unlabelled dataset for producing uncorrelated natural deformations in the labeled dataset.
 
 ![alt text](https://github.com/oberoigaurav/eneuronet/blob/master/tensorflow/diagrams/methodology_registration_da.png?raw=true)
+
+
+## DataSet Used 
+
+### Training 
+We utilized publicly available Mindboggle-101 dataset for training and evaluation. Mindboggle is a collection of 101 T1-weighted human brain MR Images, available along with FreeSurfer FreeSurfer cortical parcellation and manually edited cortical parcellation. Mindboggle-101 dataset can be found at https://mindboggle.info/data.html.
+
+### Data Augmentation
+We leveraged the use of unlabelled IXI dataset while training to improve the generalization performance of our method. In annotation efficiency setting, E-NeuroNet was trained only on 41 Mindboggle labelled images to give a good accuracy. The dataset is available at https://brain-development.org/ixi-dataset/.
+
+### Evaluation
+We used the following datasets for evaluating the generalization performance of our method. 
+
+#### ABIDE II
+ABIDE II is available at http://fcon_1000.projects.nitrc.org/indi/abide/abide_II.html.
+
+#### ADNI
+ADNI is available at http://adni.loni.usc.edu.
+
+#### CANDI
+CANDI is available at https://www.nitrc.org/projects/candi_share/.
+
+#### IBSR
+The dataset is provided by the Center for Morphometric Analysis at Massachusetts General
+Hospital and is freely available at http://www.cma.mgh.harvard.edu/ibsr/ and https://www.nitrc.org/projects/ibsr/.
+
+#### BraTS
+The dataset is freely available at https://www.med.upenn.edu/cbica/brats2020/. 
+
+
+
+
+

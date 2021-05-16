@@ -20,13 +20,12 @@ Elasticdeform 0.4.6
 
 We trained the model on the MR scans normalized by FreeSurfer. Specifically, we used norm.mgz for training the model. 
 
-export SUBJECTS_DIR=
 
-export FREESURFER_HOME=/usr/local/freesurfer
-
-source $FREESURFER_HOME/SetUpFreeSurfer.sh
-
-recon-all -s imagename -i image.mgz -autorecon1 -parallel
+	##export SUBJECTS_DIR=
+	export FREESURFER_HOME=/usr/local/freesurfer
+	source $FREESURFER_HOME/SetUpFreeSurfer.sh
+	## autorecon1
+	recon-all -s imagename -i image.mgz -autorecon1 -parallel
 
 
 ## Training 

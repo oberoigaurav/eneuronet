@@ -1,7 +1,7 @@
 # E-NeuroNet: Efficient 3D CNN for Segmentation of Neuroimages
 
 ## Introduction
-A Tensorflow 1.X implementation of E-NeuroNet. The model is developed using Keras and Tranined using Tensorflow. 
+A Tensorflow 1.X implementation of E-NeuroNet. The model is developed using Keras and Trained using Tensorflow. 
 
 ## Dependencies
 The following dependencies/libraries were used to train and test the model.
@@ -41,7 +41,7 @@ logdir: Tensorboard log directory
 
 ckdir: Checkpoint directory
 
-outdir: Output image directory, where prediction segmention will be saved
+outdir: Output image directory, where prediction segmentation will be saved
 
 datadir: Data directory
 
@@ -75,9 +75,9 @@ registration-augmentation: If apply registration-based deformation data augmenta
 
 elastic-augmentation: If apply elastic deformation data augmentation
 
-For training this model, we require a pre-trained learing based deformable registration model. This will be utilized for deformable registration based data-augmentation while training the E-NeuroNet architecture. 
+For training this model, we require a pre-trained learning based deformable registration model. This will be utilized for deformable registration based data-augmentation while training the E-NeuroNet architecture. 
 
-We provide a pre-trained DFNet model for deformable registration, which is trained over norm.mgz from Mindboggle dataset, cropped to size (160, 192, 224). If training is required over some other dataset type, the following methods may be used:
+We provide a pre-trained DFNet model for deformable registration, which is trained over norm.mgz from the Mindboggle dataset, cropped to size (160, 192, 224). If training is required over some other dataset type, the following methods may be used:
 
 a) DFNet: 
 
@@ -96,10 +96,9 @@ The model can be tested using test.py as shown below:
 
 ## Evaluation
 
-The performance of model can be evaluated using EvaluateSegmentation tool which is freely available at https://github.com/Visceral-Project/EvaluateSegmentation.
+The performance of the model can be evaluated using the EvaluateSegmentation tool which is freely available at https://github.com/Visceral-Project/EvaluateSegmentation.
 
 
 ## References
 
 E-NeuroNet, Oberoi et. al. 2021
-

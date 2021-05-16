@@ -79,7 +79,11 @@ For training this model, we require a pre-trained learing based deformable regis
 
 We provide a pre-trained DFNet model for deformable registration, which is trained over norm.mgz from Mindboggle dataset, cropped to size (160, 192, 224). If training is required over some other dataset type, the following methods may be used:
 
-a) DFNet: http://cds.iisc.ac.in/faculty/yalavarthy/dfnet/DFNetWarpNet.pdf, https://github.com/oberoigaurav/warpnet
+a) DFNet: 
+
+http://cds.iisc.ac.in/faculty/yalavarthy/dfnet/DFNetWarpNet.pdf
+
+https://github.com/oberoigaurav/warpnet
 
 b) VoxelMorph: 
 	Balakrishnan, Guha, et al. "VoxelMorph: a learning framework for deformable medical image registration." IEEE transactions on medical imaging 38.8 (2019): 1788-1800.
@@ -87,9 +91,15 @@ b) VoxelMorph:
 ## Testing 
 
 The model can be tested using test.py as shown below:
-	python test.py --ckdir=../models --outdir=../output --datadir=
-	../data/image --labeldir=../data/label --classes=30
+
+	python test.py --ckdir=../models --outdir=../output --datadir=../data/image --labeldir=../data/label --classes=30
 
 ## Evaluation
 
 The performance of model can be evaluated using EvaluateSegmentation tool which is freely available at https://github.com/Visceral-Project/EvaluateSegmentation.
+
+
+## References
+
+E-NeuroNet, Oberoi et. al. 2021
+

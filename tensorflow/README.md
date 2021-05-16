@@ -16,8 +16,11 @@ Numpy 1.17.3
 
 Elasticdeform 0.4.6
 
+## Preprocessing
+
 ## Training 
 
 
 ## Testing 
 
+## Evaluation
